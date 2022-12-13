@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
+
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: 'Red Hat Display', sans-serif;
+    }
+    
+    body{
+      background-image: url("images/pattern-background-desktop.svg");
+      background-repeat:repeat-x;
+      background-color: hsl(225, 100%, 94%);
+    }
+    
+    main{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .container{
+      width: 400px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 5px 15px 15px hsl(221, 8%, 63%);
+    }
+    
+    .hero{
+      border-radius: 10px 10px 0 0;
+      width: 400px;
+      height: auto;
+    }
+
+    .container-inner{
+      padding: 30px 50px;
+      text-align: center;
+    }
+
+    h1{
+      font-weight: 900;
+      font-size: 31px;
+      margin-bottom: 20px;
+    }
+
+    .plan{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: hsl(225, 100%, 98%);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .image-price{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .name-price{
+      margin-left: 15px;
+    }
+
+    .price{
+      color: hsl(224, 23%, 55%);
+    }
+
+    .container-inner2{
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .name{
+      font-weight: 900;
+      color: hsl(223, 47%, 23%);
+    }
+
+    .change{
+      text-decoration: underline;
+      color: hsl(245, 75%, 52%);
+      font-weight: 700;
+    }
+
+    button{
+      width: 100%;
+      margin: 30px 0;
+      padding: 10px;
+      color: #fff;
+      background-color: hsl(245, 75%, 52%);
+      border: none;
+      box-shadow: 1px 15px 10px hsl(225, 100%, 94%);
+      border-radius: 10px;
+      font-weight: 700;
+    }
+
+    .cancel{
+      text-align: center;
+      color: hsl(224, 23%, 55%);
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    p{
+      font-size: 16px;
+      color: hsl(224, 23%, 55%);
+    }
+
+    .change:hover{
+      cursor: pointer;
+      color: hsl(224, 23%, 55%);
+      text-decoration: none;
+    }
+
+    button:hover{
+      background-color: hsl(224, 23%, 55%);
+      cursor: pointer;
+    }
+
+    .cancel:hover{
+      color: hsl(223, 47%, 23%);
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <img src="images/illustration-hero.svg" alt="" class="hero">
+      <div class="container-inner">
+        <h1>Order Summary</h1>
+      
+        <p> You can now listen to millions of songs, audiobooks, and podcasts on any 
+        device anywhere you like!</p>
+      
+      </div>
+      <div class="container-inner2">
+        <div class="plan">
+          <div class="image-price">
+            <img src="images/icon-music.svg" alt="">
+  
+            <div class="name-price">
+              <p class="name">Annual Plan</p>
+              <p class="price">$59.99/year</p>
+            </div>
+          </div>
+        
+          <p class="change">Change</p>
+        </div>
+      
+        <button>Proceed to Payment</button>
+        <p class="cancel">Cancel Order</p>
+      </div>
+    </div>
+  </main>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>. -->
+  </div>
+</body>
+</html>
